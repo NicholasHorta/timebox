@@ -12,6 +12,8 @@ startBtn.addEventListener("click", () => startTimer());
 pauseBtn.addEventListener("click", () => pauseTimer());
 refreshBtn.addEventListener("click", () => refreshTimer());
 
+const alertAudio = new Audio('./alert.mp3')
+
 const startTimer = () => {
   timer();
   startBtn.setAttribute("disabled", true);
@@ -36,7 +38,7 @@ const timer = () => {
       minuteHandler();
       counter = 0;
     }
-  }, 10000);
+  }, 10);
 };
 function secondHandler() {
   if (sec && counter <= 9) {
@@ -48,7 +50,7 @@ function secondHandler() {
 
 function minuteHandler() {
   if (initMin >= 39) {
-    console.log(initMin);
+    alertAudio.play();
     clearInterval(timeStation);
     startBtn.textContent = 'complete'
     pauseBtn.textContent = '+1 min'
