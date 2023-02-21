@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  font-family: "Comfortaa";
+  margin: 0;
+  color: white;
+}
+
+html,
+body {
+  height: 100vh;
+  background: rgb(228, 207, 0);
+  background: linear-gradient(
+    189deg,
+    rgba(228, 207, 0, 0) 0%,
+    rgba(182, 14, 14, 1) 90%
+  );
+}
+
+h1 {
+  font-size: 7rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  padding-top: 8rem;
+}
+
+section > div {
+  width: 300px;
+}
+
+section > span {
+  margin: 0 1.5rem;
+}
+
+section > div:first-of-type {
+  text-align: end;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.time {
+  font-size: 8rem;
+}
+
+button {
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ffffff33;
+}
+
+.buttons > button:last-of-type {
+    margin-left: 3rem;
+}
+
+.refresh {
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-size: 1.25rem;
+}

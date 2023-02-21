@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Timebox</title>
-</head>
-<body>
-    <h1>Timebox</h1>   
-    <section>
-        <div class="min">00</div>
-        <span>:</span>
-        <div class="sec">00</div>
-        <span>:</span>
-        <div class="milli">00</div>
+  </head>
+  <body>
+    <h1>Timebox</h1>
+    <section class="time">
+      <div id="min" class="min">00</div>
+      <span>:</span>
+      <div id="sec" class="sec">00</div>
     </section>
-</body>
+    <section class="buttons">
+        <button id="start">start</button>
+        <button id="pause">pause</button>
+    </section>
+    <button class="refresh" id="refresh">
+      refresh
+    </button>
+    <script src="script.js"></script>
+  </body>
 </html>
