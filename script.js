@@ -38,7 +38,7 @@ const timer = () => {
       minuteHandler();
       counter = 0;
     }
-  }, 10);
+  }, 1000);
 };
 function secondHandler() {
   if (sec && counter <= 9) {
